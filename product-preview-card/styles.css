@@ -40,7 +40,11 @@ img {
 	overflow: hidden;
 	border-radius: 6px;
 }
+
 .card__img {
+	background-image: url('images/image-product-desktop.jpg');
+	background-position: center;
+	background-size: cover;
 	flex: 1 1 0;
 }
 
@@ -115,4 +119,16 @@ img {
 
 .card__info__button span {
 	margin-left: 10px;
+}
+
+@media (max-width: 375px) {
+	.card {
+		flex-direction: column;
+		margin: 10px;
+	}
+
+	.card__img {
+		background-image: url('images/image-product-mobile.jpg');
+		min-height: 250px;
+	}
 }
